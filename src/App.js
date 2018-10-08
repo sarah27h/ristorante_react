@@ -2,14 +2,16 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { Navbar,NavbarBrand } from 'reactstrap'
+import Menu from './components/Menu.js'
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <div>
         <Navbar color="danger" light expand="md">
-          <NavbarBrand href="/">Best Bakery</NavbarBrand>
-          </Navbar>
+            <NavbarBrand href="/">Best Resturant</NavbarBrand>
+        </Navbar>
+        <Menu />
       </div>
     );
   }
