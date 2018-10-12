@@ -11,7 +11,7 @@ class App extends Component {
 
     // add dishes as a state into parent App component
     this.state = {
-      dishes = DISHES
+      dishes : DISHES
     };
   }
   render() {
