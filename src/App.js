@@ -1,10 +1,19 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { Navbar,NavbarBrand } from 'reactstrap'
-import Menu from './components/Menu.js'
+import { Navbar,NavbarBrand } from 'reactstrap';
+import Menu from './components/Menu.js';
+import { DISHES } from './data/dishes';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+
+    // add dishes as a state into parent App component
+    this.state = {
+      dishes = DISHES
+    };
+  }
   render() {
     return (
       <div>
