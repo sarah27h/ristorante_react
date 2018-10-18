@@ -33,12 +33,13 @@ class Dishdetail extends Component {
 
     renderComments(dish) {
             if(dish != null) {
+                let options = { year: 'numeric', month: 'short', day: 'numeric' };
                 console.log(dish.comments);
                 const dishComments = dish.comments.map((comment) => {
                     return (
                         <div>
                             <p>{comment.comment}</p>
-                           
+                            <p>-- {comment.author}, <span>{new Date(comment.date).toLocaleDateString("en-US", options)}</span></p>
                         </div>
                     );
                 });
