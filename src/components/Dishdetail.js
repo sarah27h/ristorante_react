@@ -30,9 +30,9 @@ class Dishdetail extends Component {
             if(dish != null) {
                 let options = { year: 'numeric', month: 'short', day: 'numeric' };
                 console.log(dish.comments);
-                const dishComments = dish.comments.map((comment) => {
+                const dishComments = dish.comments.map((comment, index) => {
                     return (
-                        <div>
+                        <div  key={index}>
                             <p>{comment.comment}</p>
                             <p>-- {comment.author}, <span>{new Date(comment.date).toLocaleDateString("en-US", options)}</span></p>
                         </div>
