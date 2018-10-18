@@ -1,18 +1,13 @@
 import React, {Component} from 'react';
-import { Card, CardImg, CardImgOverlay, CardText, CardBody, CardTitle } from 'reactstrap'
+import { Card, CardImg, CardText, CardBody, CardTitle } from 'reactstrap'
 
 
 class Dishdetail extends Component {
 
-    constructor(props) {
-        super(props);
-
-    }
-
     /* render selected dish with its details */
     renderSelectedDish(dish) {
         if(dish != null) {
-            {/* return dish details of clicked one*/}
+            /* return dish details of clicked one*/
             return(
                 <Card>
                         <CardImg width="100%" src={dish.image} alt={dish.name} />
@@ -24,7 +19,7 @@ class Dishdetail extends Component {
                     </Card>
             )
         } else {
-            {/* return empty div when user didn't click any dish initial case*/}
+            /* return empty div when user didn't click any dish initial case*/
             return(
                 <div></div>
             )
@@ -59,7 +54,7 @@ class Dishdetail extends Component {
 
     render() {
         
-        {/* this div to display selectedDish details if user click on a dish */}
+        /* this div to display selectedDish details if user click on a dish */
         return (
             <div className="row">
                 <div  className="col-12 col-md-5 m-1">
