@@ -35,8 +35,12 @@ class Dishdetail extends Component {
             if(dish != null) {
                 console.log(dish.comments);
                 const dishComments = dish.comments.map((comment) => {
-                    <p>{comment.rating}</p>
-                    {console.log(comment.rating)}
+                    return (
+                        <div>
+                            <p>{comment.comment}</p>
+                           
+                        </div>
+                    );
                 });
                 return(
                     <div>
