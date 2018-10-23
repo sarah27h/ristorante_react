@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import './App.css';
 import { Navbar,NavbarBrand } from 'reactstrap';
 import Menu from './Menu.js';
-import { DISHES } from './data/dishes';
+import { DISHES } from '../data/dishes';
 
 class Main extends Component {
   constructor(props) {
